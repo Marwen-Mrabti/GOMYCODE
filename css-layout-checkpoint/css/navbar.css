@@ -1,0 +1,190 @@
+/* UTILITIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+/*-- logo box + nav_list box --*/
+.top_navbar {
+  position: fixed;
+  width: 100%;
+  top:0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  background: rgb(22, 184, 82);
+  background: linear-gradient(
+    45deg,
+    rgba(22, 184, 82, 0.5858718487394958) 7%,
+    rgba(28, 148, 106, 0.5354516806722689) 14%,
+    rgba(119, 175, 210, 0.5606617647058824) 22%,
+    rgba(89, 187, 223, 1) 32%,
+    rgba(67, 120, 231, 0.6026785714285714) 51%,
+    rgba(0, 212, 255, 0.5214460784313726) 66%,
+    rgba(35, 100, 195, 0.5214460784313726) 78%,
+    rgba(123, 35, 195, 0.4514180672268907) 89%
+  );
+  color: rgb(235, 190, 190);
+}
+/*-- logo --*/
+.logo img {
+  width: 250px;
+}
+.logo img:hover {
+  filter: brightness(150%);
+  filter: drop-shadow(0 0 0.75rem rgba(218, 32, 8, 0.918));
+}
+/*--- NAVBAR MENU ---*/
+.menu {
+  display: flex;
+  gap: 1em;
+}
+.menu li {
+  padding: 5px 14px;
+}
+.menu li a {
+  color: #171817cb;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.menu li a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: rgba(206, 84, 84, 0.897);
+  position: relative;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  transform-origin: right;
+  transform: scale(0, 1);
+  transition: transform ease-in-out 0.5s;
+}
+
+.menu li a:hover::after {
+  transform: scale(1, 1);
+}
+/* DROPDOWN MENU */
+.Departments {
+  position: relative;
+}
+.dropdown {
+  background-color: rgba(238, 247, 247, 0.95);
+  padding: 1em 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  border-radius: 8px;
+  top: 30px;
+}
+
+.dropdown li {
+  padding: 0.25em 0.25em 0em 0em;
+  margin-top: 10px;
+  width: 10em;
+  text-align: center;
+}
+
+.dropdown li a {
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.dropdown li > a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: rgba(14, 11, 175, 0.438);
+  position: relative;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  transform-origin: right;
+  transform: scale(0, 1);
+  transition: transform ease-in-out 0.25s;
+}
+.dropdown li > a:hover::after {
+  transform: scale(1, 1);
+}
+.Departments:hover .dropdown {
+  display: block;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type="checkbox"] {
+  display: none;
+}
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(213, 236, 236, 0.1);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: rgba(102, 84, 206, 0.897);
+    position: relative;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    transform-origin: right;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 0.5s;
+  }
+  .menu li a:hover::after {
+    transform: scale(1, 1);
+  }
+
+  .menu li a:hover {
+    display: block;
+    color: #1c50c9a1;
+  }
+  .menu li a {
+    padding-top: 10px;
+  }
+
+  .menu li + li {
+    margin-top: 10px;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .dropdown {
+    left: 50%;
+    top: 20px;
+    transform: translateX(25%);
+  }
+  .dropdown li:hover {
+    color: #2d9b9bd0;
+  }
+}

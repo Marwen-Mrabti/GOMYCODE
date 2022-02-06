@@ -1,0 +1,297 @@
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: gainsboro;
+  height: 100vh;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*------main container-------*/
+.container {
+  display: grid;
+  /* height: 100vh; */
+  width: 100%;
+  grid-template-rows: 3fr 3fr 3fr 3fr;
+  grid-template-areas:
+    "main-grid-1"
+    "main-grid-2"
+    "main-grid-3"
+    "main-grid-4";
+  grid-gap: 0.1rem;
+  background-color: gainsboro;
+  margin-top: 100px;
+}
+.main-grid-1 {
+  grid-area: main-grid-1;
+  display: grid;
+  background-color: gainsboro;
+  grid-gap: 0.1rem;
+  text-align: center;
+  grid-template-rows: 0.5fr 1fr 3fr;
+  grid-template-areas:
+    "g1-rw1"
+    "g1-rw2"
+    "g1-rw3";
+  /* min-height: 60vh;*/
+  padding-bottom: 10px;
+}
+#g1-rw1 {
+  grid-area: g1-rw1;
+  background-color: gainsboro;
+  text-align: center;
+}
+#g1-rw1 img {
+  width: 50px;
+}
+#g1-rw1 img:hover {
+  filter: brightness(150%);
+}
+#g1-rw2 {
+  grid-area: g1-rw2;
+  background-color: gainsboro;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800px;
+  color: rgb(47, 211, 32);
+}
+#g1-rw3 {
+  grid-area: g1-rw3;
+  display: grid;
+  grid-gap: 1rem;
+  background-color: gainsboro;
+  grid-template-columns: 3fr 3fr;
+  grid-template-areas: "g1-rw3-cl1 g1-rw3-cl2";
+  text-align: center;
+  margin: 0 50px;
+}
+.g1-rw3-cl1 {
+  grid-area: g1-rw3-cl1;
+  margin: 2px 10px;
+  background-color: gainsboro;
+  border-radius: 10px;
+  line-height: 1.5em;
+  text-align: justify;
+  padding: 20px 100px;
+}
+.g1-rw3-cl2 {
+  grid-area: g1-rw3-cl2;
+  margin: 2px 10px;
+  background-color: gainsboro;
+  border-radius: 10px;
+  line-height: 1.5em;
+  text-align: justify;
+  padding: 20px 100px;
+}
+/*------------------------------------*/
+.main-grid-2 {
+  grid-area: main-grid-2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "g2-cl1 g2-cl2 g2-cl3";
+  /* height: 40vh; */
+  background-color: gainsboro;
+  grid-gap: 2rem;
+  margin: 3rem 1rem;
+}
+.g2-cl1 {
+  grid-area: g2-cl1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #00ccb1;
+  color: white;
+  border-radius: 2rem;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin: 1rem 1rem;
+  padding: 0.5rem 2.5rem;
+}
+.g2-cl2 {
+  grid-area: g2-cl2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #3d83df;
+  color: white;
+  border-radius: 2rem;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin: 1rem 1rem;
+  padding: 0.5rem 2.5rem;
+}
+.g2-cl3 {
+  grid-area: g2-cl3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #1b2734;
+  color: white;
+  border-radius: 2rem;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin: 1rem 1rem;
+  padding: 0.5rem 2.5rem;
+}
+
+/*-----------------------------------------*/
+.main-grid-3 {
+  grid-area: main-grid-3;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas: "h1 ul";
+  background-color: gainsboro;
+  margin: 1rem 1rem;
+  padding: 0.5rem 2.5rem;
+}
+.main-grid-3 > h1 {
+  color: #00b39b;
+  float: left;
+  font-size: 1.5rem;
+  margin: 0.25em 0 0.35em;
+  padding-right: 1em;
+  align-self: center;
+}
+.main-grid-3 > ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 0;
+  list-style: none;
+  margin: 1.25rem;
+}
+.main-grid-3 > ul li {
+  padding: 1.25rem;
+}
+
+.main-grid-3 > h1:hover {
+  filter: brightness(120%);
+}
+.main-grid-3 > ul li a {
+  color: #3d83df;
+  text-decoration: none;
+  outline: 0;
+  display: inline-block;
+  padding: 5px 0;
+}
+.main-grid-3 > ul li a svg {
+  height: 20px;
+  width: auto;
+  background-color:transparent;
+  fill:grey;
+  max-width: 100%;
+  padding-left: 10px;
+}
+.main-grid-3 > ul li a svg:hover {
+  filter: brightness(105%);
+  fill:rgba(106, 219, 121, 0.849);
+}
+.main-grid-3 > ul li a:hover {
+  filter: brightness(120%);
+}
+/*---------------------------------------------*/
+.main-grid-4 {
+  grid-area: main-grid-4;
+  display: grid;
+  background-color: gray;
+  grid-gap: 1rem;
+}
+
+/*------media query-------*/
+@media only screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "main-grid-1"
+      "main-grid-2"
+      "main-grid-3"
+      "main-grid-4";
+    text-align: center;
+    padding: 5px;
+  }
+  .main-grid-1 {
+    display: grid;
+    grid-area: main-grid-1;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.2fr 1fr;
+    grid-template-areas:
+      "g1-rw1"
+      "g1-rw2"
+      "g1-rw3";
+    margin-bottom: 20px;
+    height: auto;
+  }
+
+  #g1-rw1 {
+    grid-area: g1-rw1;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  #g1-rw2 {
+    grid-area: g1-rw2;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  #g1-rw3 {
+    display: grid;
+    grid-area: g1-rw3;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.51fr 0.51fr;
+    grid-template-areas:
+      "g1-rw3-cl1"
+      "g1-rw3-cl2";
+    text-align: center;
+    margin: 2rem 1rem;
+  }
+
+  .g1-rw3-cl1 {
+    grid-area: g1-rw3-cl1;
+    margin: 2px 10px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    line-height: 1.5em;
+    text-align: justify;
+    padding: 5px 2px;
+  }
+  .g1-rw3-cl2 {
+    grid-area: g1-rw3-cl2;
+    margin: 2px 10px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    line-height: 1.5em;
+    text-align: justify;
+    padding: 5px 2px;
+  }
+
+  .main-grid-2 {
+    grid-area: main-grid-2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "g2-cl1" "g2-cl2" "g2-cl3";
+    /* height: 40vh; */
+    background-color: gainsboro;
+    grid-gap: 2rem;
+    margin: 0.1rem;
+  }
+}
