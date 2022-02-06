@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--meta tags-->
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>css checkpoint</title>
+  </head>
+
+  <!--webpage body-->
+  <body>
+
+    <!--header contains the navbar & checkpoint img-->
+    <header class="header">
+      <!--top navigation bar -->
+        <nav class="primary_nav">
+          <h3>
+            <ul id="top_navbar_ul">
+
+              <li>
+                <a class="active" href="#home" id="Home">
+                 <i class="fa fa-home" style="font-size:25px;color:rgb(23, 179, 30)"></i> Home
+                </a>
+              </li>
+
+              <li>
+                <a href="#about">
+                  <i class="fa fa-drivers-license" style="font-size:25px;color:rgb(224, 131, 9)"></i>
+                   about
+                </a>
+              </li>
+
+              <li class="nav_img">
+                <i class="fa fa-css3" style="font-size:40px;color:rgb(21, 88, 175)"></i>
+                <img src="res/assets/CPHeader.png" alt="checkpoint" class="nav_sub_img"/>
+              </li>
+
+              <li>
+                <a href="#work"><i class="fa fa-briefcase" style="font-size:25px;color:rgb(180, 169, 9)"></i> work</a>
+              </li>
+
+              <li>
+                <a href="#contact"><i class="fa fa-telegram" style="font-size:25px;color:rgb(9, 77, 180)"></i> contact</a>
+              </li>
+
+            </ul>
+          </h3>
+        </nav>
+    </header>
+
+    <!--main body of webpage-->
+    <main>
+
+      <!--about section-->
+      <section class="about" id="about">
+        <h1 id="h1_about">about</h1>
+        <h3>HELLO THIS IS MARWEN</h3>
+        <p>we will get to know each other </p>
+        <p>or read this (if you can) :</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi ducimus animi consectetur, molestias inventore aliquam numquam illum maxime dolor!</p>
+
+        <div class="inner_nvbar">
+          <a href="#Home"><i class="fa fa-home" style="font-size:25px;color:rgb(204, 84, 15)"></i></a>
+          <a href="#work"><i class="fa fa-briefcase" style="font-size:25px;color:rgb(180, 169, 9)"></i></a>
+          <a href="#contact"><i class="fa fa-telegram" style="font-size:25px;color:rgb(9, 77, 180)"></i></a>
+        </div>
+      </section>
+
+      <!--work section-->
+      <section class="work" id="work">
+        <h1 id="h1_work">work</h1>
+        <p>YET TO COME</p>
+        <p>how about watching a tutorial :
+          <h5>
+            <a href="https://www.youtube.com/watch?v=UB1O30fR-EE&list=PLillGF-RfqbYeckUaD1z6nviTp31GLTH8&index=1" target="blank">learn html with brad <i class="fa fa-youtube-play" style="font-size:48px;color:red"></i></a>
+          </h5>
+        </p>
+
+        <div class="inner_nvbar">
+            <a href="#Home"><i class="fa fa-home" style="font-size:25px;color:rgb(204, 84, 15)"></i></a>
+            <a href="#about"><i class="fa fa-drivers-license" style="font-size:25px;color:rgb(224, 131, 9)"></i></a>
+            <a href="#contact"><i class="fa fa-telegram" style="font-size:25px;color:rgb(9, 77, 180)"></i></a>
+        </div>
+
+      </section>
+
+      <!--contact form section-->
+      <section class="contact" id="contact">
+        <h1 id="h1_contact">contact</h1>
+        <div class="container">
+          <form>
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="Tunisia">Tunisia</option>
+              <option value="canada">Canada</option>
+              <option value="German">German</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        <div class="inner_nvbar">
+          <a href="#Home"><i class="fa fa-home" style="font-size:25px;color:rgb(204, 84, 15)"></i></a>
+          <a href="#about"><i class="fa fa-drivers-license" style="font-size:25px;color:rgb(224, 131, 9)"></i></a>
+          <a href="#work"><i class="fa fa-briefcase" style="font-size:25px;color:rgb(180, 169, 9)"></i></a>
+        </div>
+      </section>
+
+    </main>
+
+    <!--footer-->
+    <footer>
+      <h3>this is a footer</h3>
+      <p>end of html checkpoint</p>
+      <a href="#Home"><i class="fa fa-home" style="font-size:25px;color:rgb(204, 84, 15)"></i></a>
+    </footer>
+  </body>
+</html>

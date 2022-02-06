@@ -1,0 +1,96 @@
+/*--- google fonts ---*/
+
+/*--- main body ---*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font: size 18px;
+  line-height: 1.6em;
+  background: rgb(151, 149, 147);
+  background: linear-gradient(
+    45deg,
+    rgba(170, 97, 20, 0.8127626050420168) 7%,
+    rgba(183, 193, 19, 0.8155637254901961) 14%,
+    rgba(6, 101, 15, 0.8183648459383753) 26%,
+    rgba(5, 77, 33, 0.7567401960784313) 36%,
+    rgba(9, 86, 121, 0.7175245098039216) 45%,
+    rgba(5, 44, 180, 0.7959558823529411) 57%,
+    rgba(147, 0, 251, 0.7035189075630253) 70%,
+    rgba(174, 38, 126, 0.7931547619047619) 81%,
+    rgba(255, 76, 0, 0.6558998599439776) 90%
+  );
+}
+
+main {
+  padding: 16px;
+  margin: 20px 20px 20px 20px;
+}
+
+/*--- navbar ---*/
+.primary_nav {
+  width: auto;
+  border: 2px solid rgb(34, 32, 33);
+  padding: 20px;
+  border-radius: 10px;
+}
+#top_navbar_ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+#top_navbar_ul li {
+  display: inline;
+  margin: 30px;
+}
+.nav_sub_img {
+  width: 200px;
+  height: 75px;
+}
+.nav_img:hover {
+  filter: brightness(300%);
+}
+#top_navbar_ul li a {
+  color: rgb(26, 6, 83);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    139deg,
+    rgba(131, 58, 180, 0.7147233893557423) 0%,
+    rgba(59, 129, 173, 1) 19%,
+    rgba(126, 76, 158, 1) 35%,
+    rgba(173, 32, 108, 0.6643032212885154) 50%,
+    rgba(196, 75, 197, 1) 65%,
+    rgba(121, 222, 201, 1) 81%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border-radius: 25px;
+}
+
+/*---section_1: about ---*/
+.about {
+  width: auto;
+  height: 90%;
+  border: 3px solid rgb(29, 43, 77);
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  margin: 10px 20px 10px 20px;
+}
+#h1_about {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font: size 60px;
+}
+
+/*---section_2: work ---*/
+.work {
+  width: auto;
+  height: 90%;
+  border: 3px solid rgb(119, 14, 133);
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  margin: 10px 20px 10px 20px;
+}
