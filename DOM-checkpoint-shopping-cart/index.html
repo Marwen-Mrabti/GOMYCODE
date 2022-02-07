@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>shopping-cart</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <!---------- products shelf ------------------------>
+      <section class="section">
+        <h2 class="section_header">PRODUCT</h2>
+        <div class="products">
+          <div class="product">
+            <button class="btn-like">
+              <span class="heart-icon">
+                <span class="fa fa-heart"></span>
+              </span>
+            </button>
+            <img
+              class="product__image"
+              src="img/products/mineral-water.svg"
+              alt="water"
+            />
+            <h2 class="product__name">water</h2>
+            <h3 class="product__price">3.50</h3>
+            <button class="btn btn--primary" data-action="ADD_TO_CART">
+              Add To Cart
+            </button>
+          </div>
+          <div class="product">
+            <button class="btn-like">
+              <span class="heart-icon">
+                <span class="fa fa-heart"></span>
+              </span>
+            </button>
+            <img class="product__image" src="img/products/tea.svg" alt="tea" />
+            <h2 class="product__name">tea</h2>
+            <h3 class="product__price">2.00</h3>
+            <button class="btn btn--primary" data-action="ADD_TO_CART">
+              Add To Cart
+            </button>
+          </div>
+          <div class="product">
+            <button class="btn-like">
+              <span class="heart-icon">
+                <span class="fa fa-heart"></span>
+              </span>
+            </button>
+            <img
+              class="product__image"
+              src="img/products/milk.svg"
+              alt="Milk"
+            />
+            <h2 class="product__name">Milk</h2>
+            <h3 class="product__price">2.50</h3>
+            <button class="btn btn--primary" data-action="ADD_TO_CART">
+              Add To Cart
+            </button>
+          </div>
+          <div class="product">
+            <button class="btn-like">
+              <span class="heart-icon">
+                <span class="fa fa-heart"></span>
+              </span>
+            </button>
+            <img
+              class="product__image"
+              src="img/products/cocktail.svg"
+              alt="cocktail"
+            />
+            <h2 class="product__name">cocktail</h2>
+            <h3 class="product__price">7.00</h3>
+            <button class="btn btn--primary" data-action="ADD_TO_CART">
+              Add To Cart
+            </button>
+          </div>
+          <div class="product">
+            <button class="btn-like">
+              <span class="heart-icon">
+                <span class="fa fa-heart"></span>
+              </span>
+            </button>
+            <img
+              class="product__image"
+              src="img/products/energy-drink.svg"
+              alt="Energy Drink"
+            />
+            <h2 class="product__name">Energy Drink</h2>
+            <h3 class="product__price">5.00</h3>
+            <button class="btn btn--primary" data-action="ADD_TO_CART">
+              Add To Cart
+            </button>
+          </div>
+          <div class="product">
+            <button class="btn-like">
+              <span class="heart-icon">
+                <span class="fa fa-heart"></span>
+              </span>
+            </button>
+            <img
+              class="product__image"
+              src="img/products/juice.svg"
+              alt="Juice"
+            />
+            <h2 class="product__name">Juice</h2>
+            <h3 class="product__price">4.00</h3>
+            <button class="btn btn--primary" data-action="ADD_TO_CART">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-------- cart to fill using javascript -------->
+      <section class="section">
+        <h2 class="section_header">CART</h2>
+        <div class="cart"></div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
