@@ -1,0 +1,79 @@
+.movie-card {
+  /* background-color: rgb(80, 77, 77); */
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+}
+
+.movie-poster {
+  flex: 1 1 30%;
+  margin:auto 1rem;
+  width: 40%;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.movie-poster img {
+  height: 95%;
+}
+.movie-info {
+  flex: 1 1 50%;
+  padding: 1rem;
+  margin: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  text-align: justify;
+  font-family: 'Lobster', 'Gochi Hand', cursive;
+  font-size: 1.8rem;
+}
+/*info layer*/
+
+.movie__title {
+  font-size: 2.8rem;
+  color: orangered;
+  margin: 1rem 0.5rem;
+}
+.movie__year {
+  color: rgb(255, 217, 0);
+  margin: 1rem 0.5rem;
+}
+
+.movie__rating {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+.MuiRating-decimal {
+  font-size: 3rem;
+  color: rgba(4, 0, 255, 0.76);
+}
+.movie__description {
+  font-family: 'Lucida Sans', sans-serif;
+  font-size: 2rem;
+  color: rgb(106, 118, 121);
+  line-height: 2.5rem;
+}
+
+.add-favorite {
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+  padding: 0.2rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+.add-favorite .fa-heart {
+  color: beige;
+}
+.add-favorite:hover .fa-heart {
+  color: rgba(255, 0, 0, 0.603);
+}
+.add-favorite__true .fa-heart {
+  color: red;
+}

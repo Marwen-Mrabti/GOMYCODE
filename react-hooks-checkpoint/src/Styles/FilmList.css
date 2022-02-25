@@ -1,0 +1,60 @@
+.film-list {
+  width: 90vw;
+  min-height: 90vh;
+  margin: auto;
+  background: none;
+  border: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySwiper {
+  width: 90%;
+  height: 90vh;
+  margin: auto;
+  background: none;
+  border: none;
+}
+
+.swiper-slide {
+  height: 80vh;
+  margin-top: 2rem;
+  border: none;
+  text-align: center;
+  font-size: 1.8rem;
+  box-shadow: inset 0 0 10px #000000;
+  background-color: #00000081;
+  /* background: rgba(31, 30, 30, 0.76); */
+  border-radius: 5rem;
+}
+.swiper-button-next {
+  margin-right: 0rem;
+  color: var(--limeGreen);
+  transform: scale(1.2);
+  transition: all 0.5s linear;
+}
+.swiper-button-prev {
+  margin-left: 0rem;
+  color: var(--limeGreen);
+  transform: scale(1.2);
+  transition: all 0.7s linear;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: rgba(13, 69, 221, 0.767);
+  transform: scale(1.7);
+  filter: contrast(150%);
+}
+.swiper-pagination-bullet {
+  background-color: white;
+  transition: all 0.5s linear;
+}
+
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet:active,
+.swiper-pagination-bullet-active {
+  background-color: rgb(8, 240, 20);
+  transform: scale(1.5);
+}
