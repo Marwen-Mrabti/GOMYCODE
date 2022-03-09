@@ -1,0 +1,31 @@
+.todo {
+  width: 70%;
+  margin: 1rem auto 1rem auto;
+  padding: 1rem 2rem;
+  align-items: center;
+  background: rgb(218, 214, 214);
+  border-radius: 2rem;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.input {
+  flex: 2 1 90%;
+  font-size: 1.8rem;
+  padding: 1rem;
+  border: 2px dashed darkolivegreen;
+  border-radius: 1rem 2.5rem 1rem 2.5rem;
+}
+.input:hover {
+  background-color: bisque;
+}
+.btn-add {
+  flex: 1 1 10%;
+  margin: 1rem;
+  font-size: 3rem;
+}
+.btn-add:hover > svg {
+  color: rgba(0, 26, 255, 0.767);
+}
