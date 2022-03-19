@@ -1,0 +1,87 @@
+.btn-filter {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem 2rem;
+  background-color: rgba(10, 10, 10, 0.7);
+  color: aqua;
+}
+
+.btn-filter:hover,
+.btn-filter:focus {
+  background-color: aqua;
+  color: black;
+}
+
+.todo-list {
+  background: #4393b8, transparent;
+  width: 80vw;
+  padding: 1rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.todo-list:hover {
+  overflow-y: scroll;
+}
+
+.todo-item {
+  width: 80%;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  border: 0.1rem dashed darkkhaki;
+  box-shadow: inset 0 0 10px #000000;
+  display: flex;
+  flex-wrap: nowrap;
+
+  /*control the transformation*/
+  transition: all 0.5s linear;
+}
+
+.todo-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #000000;
+}
+.todo-text {
+  flex: 2 1 80%;
+  background-color: #fff;
+  margin: 1.5rem;
+  padding: 1rem;
+  font-family: var(--stylish-font-family);
+  color: rgba(25, 26, 26, 0.733);
+  font-size: 2.4rem;
+  /* control the overflow behavior*/
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-radius: 2rem;
+}
+
+.btn {
+  flex: 1 1 10%;
+  background: transparent;
+  font-size: 3rem;
+  margin: 0.3rem;
+  border: none;
+}
+.btn svg {
+  color: gray;
+}
+
+.btn-edit:hover > svg {
+  color: rgba(30, 255, 0, 0.767);
+}
+.btn-delete:hover > svg {
+  color: rgba(255, 123, 0, 0.767);
+}
+
+.hidden {
+  display: none;
+}
+
+.completed {
+  text-decoration: line-through;
+}
